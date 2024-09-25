@@ -29,7 +29,9 @@ If a password for github already exists, it will ask to replace it.</br>
 ![asking to replace old password for github](https://i.imgur.com/Zh6FEnY.png)</br>
 
 The password for github has been replaced!</br>
-![old password for github replaced by new one](https://i.imgur.com/Zh6FEnY.png)
+![old password for github replaced by new one](https://i.imgur.com/Zh6FEnY.png)<br/></br>
+
+I plan to improve this again in the near future! :D
 
 
 
