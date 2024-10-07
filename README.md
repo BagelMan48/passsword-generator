@@ -11,6 +11,12 @@ It was very fun. It was also my first time attempting to play around with the fi
 - Storing passwords
 - Replacing passwords
 
+## Requirements
+- Pynput. To install it, run the following command. Otherwise, it will not work.
+```
+python -m pip install pynput
+```
+
 ## Example procedure
 Entering the length of your password<br/>
 ![Entering the number 10 for the length of the password](https://i.imgur.com/ageorek.png)<br/>
