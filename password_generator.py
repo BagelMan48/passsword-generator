@@ -28,15 +28,16 @@ def main():
         userOption = input("Invalid input. Please enter G for Generate or V for View: ")
     if (userOption.lower() == 'v') or (userOption.lower() == "view"):
         if not os.path.exists("passwords.json"):
-            print("No passwords saved.")
+            print("No passwords saved. Go make some!")
             return
         else:
             with open("passwords.json", 'r') as file:
                 passData = json.load(file)
+                print("Passwords saved: ")
                 for key in passData:
                     print(key)
                 file.close()
-            passLabel = input("Which password would you like to view? ")
+            passLabel = input("\nWhich password would you like to view? ")
             with open("passwords.json", 'r') as file:
                 passData = json.load(file)
                 if passLabel in passData:
