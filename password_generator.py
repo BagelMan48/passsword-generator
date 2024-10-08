@@ -9,15 +9,12 @@ def passwordGenerator(length, wantChar):
 
     for i in range(length):
         currentChar = (chr(randint(33, 127)))
-
         if (wantChar == False):
             while not (currentChar.isalpha()) and not (currentChar.isnumeric()):
                 currentChar = (chr(randint(33, 127)))
                 if (currentChar.isalpha()) or (currentChar.isnumeric()):
                     break
-
-        password += currentChar
-        
+        password += currentChar 
     return password
 
 
@@ -26,10 +23,12 @@ def main():
     userOption = input("Do you want to generate a password or view saved passwords? G for Generate. V for View: ")
     while (userOption.lower() != 'g') and (userOption.lower() != "generate") and (userOption.lower() != 'v') and (userOption.lower() != "view"):
         userOption = input("Invalid input. Please enter G for Generate or V for View: ")
+
     if (userOption.lower() == 'v') or (userOption.lower() == "view"):
         if not os.path.exists("passwords.json"):
             print("No passwords saved. Go make some!")
             return
+        
         else:
             with open("passwords.json", 'r') as file:
                 passData = json.load(file)
@@ -37,6 +36,7 @@ def main():
                 for key in passData:
                     print(key)
                 file.close()
+
             passLabel = input("\nWhich password would you like to view? ")
             with open("passwords.json", 'r') as file:
                 passData = json.load(file)
@@ -63,6 +63,7 @@ def main():
                             with open("passwords.json", 'w') as file:
                                 json.dump(passData, file)
                                 file.close()
+
                 else:
                     print("No password for " + passLabel + " found.")
                 file.close()
@@ -75,7 +76,6 @@ def main():
 
     wantSpecChar = input("""Do you want special characters?
 Y for Yes. N for No: """)
-    
     if (wantSpecChar.lower() == 'y') or (wantSpecChar.lower() == "yes"):
         wantChar = True
 
@@ -87,7 +87,6 @@ Y for Yes. N for No: """)
 Y for Yes. N for No: """)
     if (passSave.lower() == 'y') or (passSave.lower() == "yes"):
         passLabel = input("What are you saving this password for? ")
-
         passEncrypted = input("Would you like to encrypt your password? Y for Yes. N for No: ").lower()
         if passEncrypted == 'y' or passEncrypted == 'yes':
             password = base64.b64encode(password.encode('utf-8')).decode('utf-8')
@@ -111,6 +110,7 @@ Y for Yes. N for No: """)
                 if not content:
                     file.seek(0)
                     json.dump(passDataCurrent, file)
+
                 else:
                     passData = json.loads(content) if content else {}
                     if passLabel in passData:
@@ -120,11 +120,13 @@ Y for Yes. N for No: """)
                             file.seek(0)
                             file.truncate()
                             json.dump(passData, file)
+
                     else:
                         passData[passLabel] = {"Password" : password, "isEncrypted": passEncrypted}
                         file.seek(0)
                         file.truncate()
                         json.dump(passData, file)
+
                 file.close()
         
     
