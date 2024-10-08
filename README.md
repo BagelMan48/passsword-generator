@@ -10,29 +10,34 @@ It was very fun. It was also my first time attempting to play around with the fi
 - Optional special character inclusion
 - Storing passwords
 - Replacing passwords
-
+- AS OF OCTOBER 7, 2024 YOU CAN NOW ENCRYPT AND VIEW YOUR PASSWORDS
 
 ## Example procedure
-Entering the length of your password<br/>
-![Entering the number 10 for the length of the password](https://i.imgur.com/ageorek.png)<br/>
+The option to choose between viewing or generating a password. In this case, I will generate one</br>
+![Choosing the option to generate password](https://i.imgur.com/iQjafTA.png)
 
-Example randomized passwords. One with and one without special characters.</br>
-![Password with randomized characters](https://i.imgur.com/S7FLwzC.png)</br>
-![Password without randomized characters](https://i.imgur.com/tRgEKyW.png) </br>
+Entering the length of your password and choosing to include special characters or not. In this case, I chose special characters with a length of 10.<br/>
+![Entering the number 10 for the length and having special characters of the password](https://i.imgur.com/Li603qR.png)<br/>
 
-If you want to save your password, you can do so and label what password it's for. Otherwise, the file will close.</br>
-![Prompt for saving password](https://i.imgur.com/3mlyTxF.png)</br>
+If you want to save your password, you can do so and label what password it's for. Otherwise, the program will close.</br>
+![Prompt for saving password](https://i.imgur.com/TwCDKWT.png)</br>
 
-It is saved!</br>
-![saved password](https://i.imgur.com/L7F450W.png)</br>
+Finally, it will ask you if you want to encrypt the password. Once you do that, congrats! You have created your password!!</br>
+![Encrypting my password!](https://i.imgur.com/al7NnFh.png)</br>
 
-If a password for github already exists, it will ask to replace it.</br>
-![asking to replace old password for github](https://i.imgur.com/Zh6FEnY.png)</br>
 
-The password for github has been replaced!</br>
-![old password for github replaced by new one](https://i.imgur.com/Zh6FEnY.png)<br/></br>
+Here you can view the list of passwords, access an individual one, and decrypt/encrypt if you wish to.</br>
+![Me decrypting the Github password](https://i.imgur.com/qnZ9csC.png)</br>
 
-I plan to improve this again in the near future! For now I will think about what to make next :D
+And finally here is me successfully replacing the Github password.</br>
+![Me replacing Github password with another one](https://i.imgur.com/DePE19l.png)</br>
+![Me viewing the newly replaced Github password to confirm the replacement](https://i.imgur.com/2vEZtMQ.png)</br>
+
+
+
+
+~~I plan to improve this again in the near future! For now I will think about what to make next :D~~ </br>
+I IMPROVED IT!!!
 
 
 
