@@ -7,9 +7,9 @@ It was very fun. It was also my first time attempting to play around with the fi
 ## Features
 - Custom-length passwords
 - Optional special character inclusion
-- Storing passwords
+- Storing and viewing passwords in either JSON or DB
 - Replacing passwords
-- AS OF OCTOBER 7, 2024 YOU CAN NOW ENCRYPT AND VIEW YOUR PASSWORDS
+- Encrypting passwords
 
 ## Example procedure
 The option to choose between viewing or generating a password. In this case, I will generate one</br>
