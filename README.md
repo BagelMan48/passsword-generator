@@ -1,7 +1,6 @@
 # password-generator
 My very first project! I wanted to make something that I could use in the future, and a password generator felt perfect for me.<br/>
-It was very fun. It was also my first time attempting to play around with the files and JSON, which was admittedly a little frustrating but I'm glad I was able to figure it out in the end (with some help).
-
+It was very fun. It was also my first time attempting to play around with the files, JSON, and SQLite which was admittedly a little frustrating but I'm glad I was able to figure it out in the end (with some help).</br>
 
 
 
@@ -37,7 +36,7 @@ And finally here is me successfully replacing the Github password.</br>
 
 
 ~~I plan to improve this again in the near future! For now I will think about what to make next :D~~ </br>
-I IMPROVED IT!!!
+I IMPROVED IT!!! BY A LOT!!!!
 
 
 
